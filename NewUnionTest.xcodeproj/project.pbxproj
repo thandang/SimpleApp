@@ -15,6 +15,18 @@
 		36539BD81C93E442007B43D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36539BD61C93E442007B43D0 /* LaunchScreen.storyboard */; };
 		36539BE31C93E442007B43D0 /* NewUnionTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539BE21C93E442007B43D0 /* NewUnionTestTests.m */; };
 		36539BEE1C93E442007B43D0 /* NewUnionTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539BED1C93E442007B43D0 /* NewUnionTestUITests.m */; };
+		36539BFD1C93EC44007B43D0 /* NUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539BFC1C93EC44007B43D0 /* NUUtils.m */; };
+		36539C011C93EC7B007B43D0 /* NUConnectionBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C001C93EC7B007B43D0 /* NUConnectionBase.m */; };
+		36539C051C93EC97007B43D0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C041C93EC97007B43D0 /* Reachability.m */; };
+		36539C081C93EE43007B43D0 /* NUAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C071C93EE43007B43D0 /* NUAPI.m */; };
+		36539C0B1C93EE87007B43D0 /* NULoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C0A1C93EE87007B43D0 /* NULoginViewController.m */; };
+		36539C0F1C93EEB3007B43D0 /* NURegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C0E1C93EEB3007B43D0 /* NURegisterViewController.m */; };
+		36539C121C93EEC5007B43D0 /* NUListUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C111C93EEC5007B43D0 /* NUListUserViewController.m */; };
+		36539C151C93EF02007B43D0 /* NUAPI+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C141C93EF02007B43D0 /* NUAPI+Login.m */; };
+		36539C181C93EF1E007B43D0 /* NUAPI+CreateUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C171C93EF1E007B43D0 /* NUAPI+CreateUser.m */; };
+		36539C1B1C93EF35007B43D0 /* NUAPI+ListUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C1A1C93EF35007B43D0 /* NUAPI+ListUser.m */; };
+		368788B51C945ADA00F21F54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368788B41C945ADA00F21F54 /* UIKit.framework */; };
+		368788B71C945AE200F21F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368788B61C945AE200F21F54 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,29 @@
 		36539BE91C93E442007B43D0 /* NewUnionTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewUnionTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36539BED1C93E442007B43D0 /* NewUnionTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewUnionTestUITests.m; sourceTree = "<group>"; };
 		36539BEF1C93E442007B43D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36539BFB1C93EC44007B43D0 /* NUUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUUtils.h; path = Utils/NUUtils.h; sourceTree = "<group>"; };
+		36539BFC1C93EC44007B43D0 /* NUUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUUtils.m; path = Utils/NUUtils.m; sourceTree = "<group>"; };
+		36539BFF1C93EC7B007B43D0 /* NUConnectionBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUConnectionBase.h; path = Connections/NUConnectionBase.h; sourceTree = "<group>"; };
+		36539C001C93EC7B007B43D0 /* NUConnectionBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUConnectionBase.m; path = Connections/NUConnectionBase.m; sourceTree = "<group>"; };
+		36539C031C93EC97007B43D0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Connections/Reachability.h; sourceTree = "<group>"; };
+		36539C041C93EC97007B43D0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Connections/Reachability.m; sourceTree = "<group>"; };
+		36539C061C93EE43007B43D0 /* NUAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUAPI.h; path = Connections/NUAPI.h; sourceTree = "<group>"; };
+		36539C071C93EE43007B43D0 /* NUAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUAPI.m; path = Connections/NUAPI.m; sourceTree = "<group>"; };
+		36539C091C93EE87007B43D0 /* NULoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NULoginViewController.h; path = ViewControllers/NULoginViewController.h; sourceTree = "<group>"; };
+		36539C0A1C93EE87007B43D0 /* NULoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NULoginViewController.m; path = ViewControllers/NULoginViewController.m; sourceTree = "<group>"; };
+		36539C0D1C93EEB3007B43D0 /* NURegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NURegisterViewController.h; path = ViewControllers/NURegisterViewController.h; sourceTree = "<group>"; };
+		36539C0E1C93EEB3007B43D0 /* NURegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NURegisterViewController.m; path = ViewControllers/NURegisterViewController.m; sourceTree = "<group>"; };
+		36539C101C93EEC5007B43D0 /* NUListUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUListUserViewController.h; path = ViewControllers/NUListUserViewController.h; sourceTree = "<group>"; };
+		36539C111C93EEC5007B43D0 /* NUListUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUListUserViewController.m; path = ViewControllers/NUListUserViewController.m; sourceTree = "<group>"; };
+		36539C131C93EF02007B43D0 /* NUAPI+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NUAPI+Login.h"; path = "Connections/NUAPI+Login.h"; sourceTree = "<group>"; };
+		36539C141C93EF02007B43D0 /* NUAPI+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NUAPI+Login.m"; path = "Connections/NUAPI+Login.m"; sourceTree = "<group>"; };
+		36539C161C93EF1E007B43D0 /* NUAPI+CreateUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NUAPI+CreateUser.h"; path = "Connections/NUAPI+CreateUser.h"; sourceTree = "<group>"; };
+		36539C171C93EF1E007B43D0 /* NUAPI+CreateUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NUAPI+CreateUser.m"; path = "Connections/NUAPI+CreateUser.m"; sourceTree = "<group>"; };
+		36539C191C93EF35007B43D0 /* NUAPI+ListUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NUAPI+ListUser.h"; path = "Connections/NUAPI+ListUser.h"; sourceTree = "<group>"; };
+		36539C1A1C93EF35007B43D0 /* NUAPI+ListUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NUAPI+ListUser.m"; path = "Connections/NUAPI+ListUser.m"; sourceTree = "<group>"; };
+		368788B31C9459AF00F21F54 /* NUConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NUConstants.h; sourceTree = "<group>"; };
+		368788B41C945ADA00F21F54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		368788B61C945AE200F21F54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368788B71C945AE200F21F54 /* Foundation.framework in Frameworks */,
+				368788B51C945ADA00F21F54 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +118,7 @@
 		36539BBC1C93E441007B43D0 = {
 			isa = PBXGroup;
 			children = (
+				368788B81C945AE800F21F54 /* Frameworks */,
 				36539BC71C93E441007B43D0 /* NewUnionTest */,
 				36539BE11C93E442007B43D0 /* NewUnionTestTests */,
 				36539BEC1C93E442007B43D0 /* NewUnionTestUITests */,
@@ -110,6 +148,9 @@
 				36539BD61C93E442007B43D0 /* LaunchScreen.storyboard */,
 				36539BD91C93E442007B43D0 /* Info.plist */,
 				36539BC81C93E441007B43D0 /* Supporting Files */,
+				36539BFE1C93EC4F007B43D0 /* Utils */,
+				36539C021C93EC85007B43D0 /* Connections */,
+				36539C0C1C93EE92007B43D0 /* ViewControllers */,
 			);
 			path = NewUnionTest;
 			sourceTree = "<group>";
@@ -138,6 +179,65 @@
 				36539BEF1C93E442007B43D0 /* Info.plist */,
 			);
 			path = NewUnionTestUITests;
+			sourceTree = "<group>";
+		};
+		36539BFE1C93EC4F007B43D0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				36539BFB1C93EC44007B43D0 /* NUUtils.h */,
+				36539BFC1C93EC44007B43D0 /* NUUtils.m */,
+				368788B31C9459AF00F21F54 /* NUConstants.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		36539C021C93EC85007B43D0 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				36539C031C93EC97007B43D0 /* Reachability.h */,
+				36539C041C93EC97007B43D0 /* Reachability.m */,
+				36539BFF1C93EC7B007B43D0 /* NUConnectionBase.h */,
+				36539C001C93EC7B007B43D0 /* NUConnectionBase.m */,
+				36539C061C93EE43007B43D0 /* NUAPI.h */,
+				36539C071C93EE43007B43D0 /* NUAPI.m */,
+				36539C1C1C93EF3D007B43D0 /* SubApis */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		36539C0C1C93EE92007B43D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36539C091C93EE87007B43D0 /* NULoginViewController.h */,
+				36539C0A1C93EE87007B43D0 /* NULoginViewController.m */,
+				36539C0D1C93EEB3007B43D0 /* NURegisterViewController.h */,
+				36539C0E1C93EEB3007B43D0 /* NURegisterViewController.m */,
+				36539C101C93EEC5007B43D0 /* NUListUserViewController.h */,
+				36539C111C93EEC5007B43D0 /* NUListUserViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36539C1C1C93EF3D007B43D0 /* SubApis */ = {
+			isa = PBXGroup;
+			children = (
+				36539C131C93EF02007B43D0 /* NUAPI+Login.h */,
+				36539C141C93EF02007B43D0 /* NUAPI+Login.m */,
+				36539C161C93EF1E007B43D0 /* NUAPI+CreateUser.h */,
+				36539C171C93EF1E007B43D0 /* NUAPI+CreateUser.m */,
+				36539C191C93EF35007B43D0 /* NUAPI+ListUser.h */,
+				36539C1A1C93EF35007B43D0 /* NUAPI+ListUser.m */,
+			);
+			name = SubApis;
+			sourceTree = "<group>";
+		};
+		368788B81C945AE800F21F54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				368788B61C945AE200F21F54 /* Foundation.framework */,
+				368788B41C945ADA00F21F54 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +302,7 @@
 		36539BBD1C93E441007B43D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NU;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ThanDang;
 				TargetAttributes = {
@@ -270,8 +371,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36539C181C93EF1E007B43D0 /* NUAPI+CreateUser.m in Sources */,
+				36539C0F1C93EEB3007B43D0 /* NURegisterViewController.m in Sources */,
+				36539BFD1C93EC44007B43D0 /* NUUtils.m in Sources */,
 				36539BD01C93E441007B43D0 /* ViewController.m in Sources */,
+				36539C1B1C93EF35007B43D0 /* NUAPI+ListUser.m in Sources */,
+				36539C151C93EF02007B43D0 /* NUAPI+Login.m in Sources */,
 				36539BCD1C93E441007B43D0 /* AppDelegate.m in Sources */,
+				36539C011C93EC7B007B43D0 /* NUConnectionBase.m in Sources */,
+				36539C081C93EE43007B43D0 /* NUAPI.m in Sources */,
+				36539C121C93EEC5007B43D0 /* NUListUserViewController.m in Sources */,
+				36539C0B1C93EE87007B43D0 /* NULoginViewController.m in Sources */,
+				36539C051C93EC97007B43D0 /* Reachability.m in Sources */,
 				36539BCA1C93E441007B43D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewUnionTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thandang.NewUnionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewUnionTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thandang.NewUnionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +609,7 @@
 				36539BF41C93E442007B43D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36539BF51C93E442007B43D0 /* Build configuration list for PBXNativeTarget "NewUnionTestTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +618,7 @@
 				36539BF71C93E442007B43D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36539BF81C93E442007B43D0 /* Build configuration list for PBXNativeTarget "NewUnionTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +627,7 @@
 				36539BFA1C93E442007B43D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
