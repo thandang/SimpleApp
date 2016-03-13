@@ -1,0 +1,16 @@
+//
+//  NewUnionTest-Prefix.pch
+//  NewUnionTest
+//
+//  Created by Than Dang on 3/13/16.
+//  Copyright © 2016 ThanDang. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "NUConstants.h"
+    #import "NUUtils.h"
+#endif

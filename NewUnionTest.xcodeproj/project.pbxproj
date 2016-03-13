@@ -27,6 +27,10 @@
 		36539C1B1C93EF35007B43D0 /* NUAPI+ListUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C1A1C93EF35007B43D0 /* NUAPI+ListUser.m */; };
 		368788B51C945ADA00F21F54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368788B41C945ADA00F21F54 /* UIKit.framework */; };
 		368788B71C945AE200F21F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368788B61C945AE200F21F54 /* Foundation.framework */; };
+		36E1490E1C95191F00540B0C /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E1490D1C95191F00540B0C /* NSString+Utils.m */; };
+		36E149111C9536AC00540B0C /* NUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149101C9536AC00540B0C /* NUUser.m */; };
+		36E149151C953D1000540B0C /* JGAFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149141C953D1000540B0C /* JGAFImageCache.m */; };
+		36E149191C953FAB00540B0C /* NSDictionary+NotNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149181C953FAB00540B0C /* NSDictionary+NotNullValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,15 @@
 		368788B31C9459AF00F21F54 /* NUConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NUConstants.h; sourceTree = "<group>"; };
 		368788B41C945ADA00F21F54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		368788B61C945AE200F21F54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36E1490B1C9514C900540B0C /* NewUnionTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewUnionTest-Prefix.pch"; sourceTree = "<group>"; };
+		36E1490C1C95191F00540B0C /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Utils.h"; path = "Utils/NSString+Utils.h"; sourceTree = "<group>"; };
+		36E1490D1C95191F00540B0C /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utils.m"; path = "Utils/NSString+Utils.m"; sourceTree = "<group>"; };
+		36E1490F1C9536AC00540B0C /* NUUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUUser.h; path = Models/NUUser.h; sourceTree = "<group>"; };
+		36E149101C9536AC00540B0C /* NUUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUUser.m; path = Models/NUUser.m; sourceTree = "<group>"; };
+		36E149131C953D1000540B0C /* JGAFImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGAFImageCache.h; path = Libraries/JGAFImageCache.h; sourceTree = "<group>"; };
+		36E149141C953D1000540B0C /* JGAFImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGAFImageCache.m; path = Libraries/JGAFImageCache.m; sourceTree = "<group>"; };
+		36E149171C953FAB00540B0C /* NSDictionary+NotNullValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+NotNullValue.h"; path = "Utils/NSDictionary+NotNullValue.h"; sourceTree = "<group>"; };
+		36E149181C953FAB00540B0C /* NSDictionary+NotNullValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+NotNullValue.m"; path = "Utils/NSDictionary+NotNullValue.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +152,11 @@
 		36539BC71C93E441007B43D0 /* NewUnionTest */ = {
 			isa = PBXGroup;
 			children = (
+				36539BFE1C93EC4F007B43D0 /* Utils */,
+				36539C021C93EC85007B43D0 /* Connections */,
+				36539C0C1C93EE92007B43D0 /* ViewControllers */,
+				36E149121C953C6F00540B0C /* Models */,
+				36E149161C953D1400540B0C /* Libraries */,
 				36539BCB1C93E441007B43D0 /* AppDelegate.h */,
 				36539BCC1C93E441007B43D0 /* AppDelegate.m */,
 				36539BCE1C93E441007B43D0 /* ViewController.h */,
@@ -148,9 +166,6 @@
 				36539BD61C93E442007B43D0 /* LaunchScreen.storyboard */,
 				36539BD91C93E442007B43D0 /* Info.plist */,
 				36539BC81C93E441007B43D0 /* Supporting Files */,
-				36539BFE1C93EC4F007B43D0 /* Utils */,
-				36539C021C93EC85007B43D0 /* Connections */,
-				36539C0C1C93EE92007B43D0 /* ViewControllers */,
 			);
 			path = NewUnionTest;
 			sourceTree = "<group>";
@@ -159,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				36539BC91C93E441007B43D0 /* main.m */,
+				36E1490B1C9514C900540B0C /* NewUnionTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -187,6 +203,10 @@
 				36539BFB1C93EC44007B43D0 /* NUUtils.h */,
 				36539BFC1C93EC44007B43D0 /* NUUtils.m */,
 				368788B31C9459AF00F21F54 /* NUConstants.h */,
+				36E1490C1C95191F00540B0C /* NSString+Utils.h */,
+				36E1490D1C95191F00540B0C /* NSString+Utils.m */,
+				36E149171C953FAB00540B0C /* NSDictionary+NotNullValue.h */,
+				36E149181C953FAB00540B0C /* NSDictionary+NotNullValue.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -238,6 +258,24 @@
 				368788B41C945ADA00F21F54 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36E149121C953C6F00540B0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36E1490F1C9536AC00540B0C /* NUUser.h */,
+				36E149101C9536AC00540B0C /* NUUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		36E149161C953D1400540B0C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				36E149131C953D1000540B0C /* JGAFImageCache.h */,
+				36E149141C953D1000540B0C /* JGAFImageCache.m */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,16 +412,20 @@
 				36539C181C93EF1E007B43D0 /* NUAPI+CreateUser.m in Sources */,
 				36539C0F1C93EEB3007B43D0 /* NURegisterViewController.m in Sources */,
 				36539BFD1C93EC44007B43D0 /* NUUtils.m in Sources */,
+				36E1490E1C95191F00540B0C /* NSString+Utils.m in Sources */,
+				36E149111C9536AC00540B0C /* NUUser.m in Sources */,
 				36539BD01C93E441007B43D0 /* ViewController.m in Sources */,
 				36539C1B1C93EF35007B43D0 /* NUAPI+ListUser.m in Sources */,
 				36539C151C93EF02007B43D0 /* NUAPI+Login.m in Sources */,
 				36539BCD1C93E441007B43D0 /* AppDelegate.m in Sources */,
 				36539C011C93EC7B007B43D0 /* NUConnectionBase.m in Sources */,
+				36E149151C953D1000540B0C /* JGAFImageCache.m in Sources */,
 				36539C081C93EE43007B43D0 /* NUAPI.m in Sources */,
 				36539C121C93EEC5007B43D0 /* NUListUserViewController.m in Sources */,
 				36539C0B1C93EE87007B43D0 /* NULoginViewController.m in Sources */,
 				36539C051C93EC97007B43D0 /* Reachability.m in Sources */,
 				36539BCA1C93E441007B43D0 /* main.m in Sources */,
+				36E149191C953FAB00540B0C /* NSDictionary+NotNullValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "NewUnionTest/NewUnionTest-Prefix.pch";
 				INFOPLIST_FILE = NewUnionTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "NewUnionTest/NewUnionTest-Prefix.pch";
 				INFOPLIST_FILE = NewUnionTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

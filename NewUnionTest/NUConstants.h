@@ -17,4 +17,12 @@ typedef enum  {
     REQUEST_GET
 } REQUEST_TYPE;
 
+
+static const NSString *APIURL = @"http://54.255.201.10:9000/";
+static const NSString *userKey = @"_id";
+static const NSString *nameKey = @"name";
+static const NSString *emailKey = @"email";
+static const NSString *avatarKey = @"avatar";
+static const NSString *passwordKey = @"password";
+
 #endif /* NUConstants_h */

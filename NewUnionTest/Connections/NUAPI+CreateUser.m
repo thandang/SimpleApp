@@ -8,6 +8,17 @@
 
 #import "NUAPI+CreateUser.h"
 
-@implementation NUAPI_CreateUser
+@implementation NUAPI (CreateUser)
+
+- (void) createUserWithUsername:(NSString *)username password:(NSString *)password email:(NSString *)email {
+    if (username && username.length && password && password.length && email && email.length) {
+        NSDictionary *dictParams = [NSDictionary dictionaryWithObjectsAndKeys:username, nameKey,
+                                    email, emailKey,
+                                    password, passwordKey, nil];
+        NSString *url = [NSString stringWithFormat:@"%@%@", APIURL, @"create"];
+        NSMutableURLRequest *request = [self requestPostWithURL:url param:dictParams];
+        [self connectWithRequest:request];
+    }
+}
 
 @end

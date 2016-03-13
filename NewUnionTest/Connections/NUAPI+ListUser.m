@@ -8,6 +8,12 @@
 
 #import "NUAPI+ListUser.h"
 
-@implementation NUAPI_ListUser
+@implementation NUAPI (ListUser)
+
+- (void) listUser {
+    NSString *url = [NSString stringWithFormat:@"%@%@", APIURL, @"users"];
+    NSMutableURLRequest *request = [self requestGetWithURL:url param:nil];
+    [self connectWithRequest:request];
+}
 
 @end

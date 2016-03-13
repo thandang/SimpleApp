@@ -26,4 +26,12 @@
     return NO;
 }
 
++ (BOOL) saveAccessToken:(NSString *)accessToken {
+    return NO;
+}
+
++ (NSString *) accessToken {
+    return nil;
+}
+
 @end

@@ -15,4 +15,7 @@
 + (void) hideWaitingView;
 + (BOOL) isConnected;
 
++ (BOOL) saveAccessToken:(NSString *)accessToken;
++ (NSString *) accessToken;
+
 @end

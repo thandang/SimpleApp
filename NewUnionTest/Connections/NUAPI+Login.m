@@ -8,6 +8,16 @@
 
 #import "NUAPI+Login.h"
 
-@implementation NUAPI_Login
+@implementation NUAPI (Login)
+
+- (void) startLoginWithUsername:(NSString *)username password:(NSString *)password {
+    if (username && username.length && password && password.length) {
+        NSDictionary *dictParams = [NSDictionary dictionaryWithObjectsAndKeys:username, emailKey,
+                                    password, passwordKey, nil];
+        NSString *url = [NSString stringWithFormat:@"%@%@", APIURL, @"auth/signin"];
+        NSMutableURLRequest *request = [self requestPostWithURL:url param:dictParams];
+        [self connectWithRequest:request];
+    }
+}
 
 @end
