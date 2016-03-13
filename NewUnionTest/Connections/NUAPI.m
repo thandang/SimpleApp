@@ -61,6 +61,7 @@ static const NSInteger kTIME_OUT_REQUEST = 300;
                 }
                 self.requestOperation = nil;
                 [self cancel];
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
             });
         };
         [operation enQueueOperation];

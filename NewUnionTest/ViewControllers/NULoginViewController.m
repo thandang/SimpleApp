@@ -76,6 +76,7 @@
             [_api cancel];
         }
         _api = [NUAPI new];
+        _api.delegate = self;
         [_api startLoginWithUsername:self.txtEmail.text password:self.txtPassword.text];
         [self showLoadingHud];
     }
@@ -90,12 +91,16 @@
     if ([dictResponse objectNotNullForKey:tokenKey]) {
         [NUUtils saveAccessToken:[dictResponse objectForKey:tokenKey]];
         [self performSegueWithIdentifier:segueList sender:self];
+    } else {
+        if ([dictResponse objectNotNullForKey:@"message"]) {
+            UIAlertView *alr = [[UIAlertView alloc] initWithTitle:@"Error" message:[dictResponse objectForKey:@"message"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alr show];
+        }
     }
 }
 
 - (void) requestDidFailedWithError:(id)errorObject {
     [self hideLoadingHud];
-//    NSError *error = (NSError *)errorObject;
     UIAlertView *alr = [[UIAlertView alloc] initWithTitle:@"Error" message:[errorObject description]  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alr show];
 }

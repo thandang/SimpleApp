@@ -13,5 +13,6 @@
 + (void) hideKeyboard:(UIView *)topView;
 + (BOOL) saveAccessToken:(NSString *)accessToken;
 + (NSString *) accessToken;
++ (id) loadViewFromNibName:(NSString *)nibName forClassName:(NSString *)className;
 
 @end

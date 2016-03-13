@@ -34,4 +34,17 @@
     return [ud objectForKey:@"token"];
 }
 
++ (id) loadViewFromNibName:(NSString *)nibName forClassName:(NSString *)className {
+    id view = nil;
+    
+    NSArray *arr = [[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil];
+    for (id object in arr) {
+        if ([object isKindOfClass:NSClassFromString(className)]) {
+            view = object;
+            break;
+        }
+    }
+    return view;
+}
+
 @end
