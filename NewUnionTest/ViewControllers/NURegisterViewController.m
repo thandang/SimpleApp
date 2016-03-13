@@ -9,6 +9,7 @@
 #import "NURegisterViewController.h"
 #import "NUAPI+CreateUser.h"
 #import "NSString+Utils.h"
+#import "NSDictionary+NotNullValue.h"
 
 
 @interface NURegisterViewController () <NUAPIDelegate> {
@@ -65,7 +66,7 @@
         }
         _api = [NUAPI new];
         _api.delegate = self;
-        [_api createUserWithUsername:self.txtName.text password:self.txtEmail.text email:self.txtPassword.text];
+        [_api createUserWithUsername:self.txtName.text password:self.txtPassword.text email:self.txtEmail.text];
         [self showLoadingHud];
     }
 }
@@ -76,7 +77,20 @@
 
 - (void) requestDidFinishedWithObject:(id)object {
     [self hideLoadingHud];
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    NSDictionary *dictResponse = (NSDictionary *)object;
+    if ([dictResponse objectNotNullForKey:@"error"]) {
+        NSDictionary *dictError = [dictResponse objectForKey:@"error"];
+        if ([dictError objectNotNullForKey:@"message"]) {
+            NSString *message = [dictError objectForKey:@"message"];
+            if (message) {
+                UIAlertView *alr = [[UIAlertView alloc] initWithTitle:@"Error" message:message  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                [alr show];
+            }
+        }
+    } else {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+    
 }
 
 - (void) requestDidFailedWithError:(id)errorObject {
