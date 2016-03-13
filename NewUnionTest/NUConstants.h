@@ -24,5 +24,6 @@ static const NSString *nameKey = @"name";
 static const NSString *emailKey = @"email";
 static const NSString *avatarKey = @"avatar";
 static const NSString *passwordKey = @"password";
+static const NSString *tokenKey = @"token";
 
 #endif /* NUConstants_h */

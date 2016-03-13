@@ -31,6 +31,8 @@
 		36E149111C9536AC00540B0C /* NUUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149101C9536AC00540B0C /* NUUser.m */; };
 		36E149151C953D1000540B0C /* JGAFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149141C953D1000540B0C /* JGAFImageCache.m */; };
 		36E149191C953FAB00540B0C /* NSDictionary+NotNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149181C953FAB00540B0C /* NSDictionary+NotNullValue.m */; };
+		36E1491D1C95716E00540B0C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E1491C1C95716E00540B0C /* MBProgressHUD.m */; };
+		36E149201C95721200540B0C /* NUCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E1491F1C95721200540B0C /* NUCommonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,10 @@
 		36E149141C953D1000540B0C /* JGAFImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGAFImageCache.m; path = Libraries/JGAFImageCache.m; sourceTree = "<group>"; };
 		36E149171C953FAB00540B0C /* NSDictionary+NotNullValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+NotNullValue.h"; path = "Utils/NSDictionary+NotNullValue.h"; sourceTree = "<group>"; };
 		36E149181C953FAB00540B0C /* NSDictionary+NotNullValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+NotNullValue.m"; path = "Utils/NSDictionary+NotNullValue.m"; sourceTree = "<group>"; };
+		36E1491B1C95716E00540B0C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Libraries/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		36E1491C1C95716E00540B0C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Libraries/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		36E1491E1C95721200540B0C /* NUCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUCommonViewController.h; path = ViewControllers/NUCommonViewController.h; sourceTree = "<group>"; };
+		36E1491F1C95721200540B0C /* NUCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUCommonViewController.m; path = ViewControllers/NUCommonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,8 @@
 				36539C0E1C93EEB3007B43D0 /* NURegisterViewController.m */,
 				36539C101C93EEC5007B43D0 /* NUListUserViewController.h */,
 				36539C111C93EEC5007B43D0 /* NUListUserViewController.m */,
+				36E1491E1C95721200540B0C /* NUCommonViewController.h */,
+				36E1491F1C95721200540B0C /* NUCommonViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -272,10 +280,20 @@
 		36E149161C953D1400540B0C /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				36E1491A1C95716200540B0C /* MBProgressHUD */,
 				36E149131C953D1000540B0C /* JGAFImageCache.h */,
 				36E149141C953D1000540B0C /* JGAFImageCache.m */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		36E1491A1C95716200540B0C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				36E1491B1C95716E00540B0C /* MBProgressHUD.h */,
+				36E1491C1C95716E00540B0C /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +430,7 @@
 				36539C181C93EF1E007B43D0 /* NUAPI+CreateUser.m in Sources */,
 				36539C0F1C93EEB3007B43D0 /* NURegisterViewController.m in Sources */,
 				36539BFD1C93EC44007B43D0 /* NUUtils.m in Sources */,
+				36E149201C95721200540B0C /* NUCommonViewController.m in Sources */,
 				36E1490E1C95191F00540B0C /* NSString+Utils.m in Sources */,
 				36E149111C9536AC00540B0C /* NUUser.m in Sources */,
 				36539BD01C93E441007B43D0 /* ViewController.m in Sources */,
@@ -422,6 +441,7 @@
 				36E149151C953D1000540B0C /* JGAFImageCache.m in Sources */,
 				36539C081C93EE43007B43D0 /* NUAPI.m in Sources */,
 				36539C121C93EEC5007B43D0 /* NUListUserViewController.m in Sources */,
+				36E1491D1C95716E00540B0C /* MBProgressHUD.m in Sources */,
 				36539C0B1C93EE87007B43D0 /* NULoginViewController.m in Sources */,
 				36539C051C93EC97007B43D0 /* Reachability.m in Sources */,
 				36539BCA1C93E441007B43D0 /* main.m in Sources */,

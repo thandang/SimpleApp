@@ -10,28 +10,28 @@
 
 @implementation NUUtils
 
-+ (void) hideKeyboard {
-    
-}
-
-+ (void) showWaitingView {
-    
-}
-
-+ (void) hideWaitingView {
-    
-}
-
-+ (BOOL) isConnected {
-    return NO;
++ (void) hideKeyboard:(UIView *)topView {
+    for (UIView *v in [topView subviews]) {
+        if ([v isKindOfClass:[UITextField class]] || [v isKindOfClass:[UITextView class]]) {
+            [v resignFirstResponder];
+        } else {
+            [self hideKeyboard:v];
+        }
+    }
 }
 
 + (BOOL) saveAccessToken:(NSString *)accessToken {
-    return NO;
+    if (!accessToken || accessToken.length == 0) {
+        return NO;
+    }
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setObject:accessToken forKey:@"token"];
+    return [ud synchronize];
 }
 
 + (NSString *) accessToken {
-    return nil;
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    return [ud objectForKey:@"token"];
 }
 
 @end

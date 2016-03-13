@@ -10,11 +10,7 @@
 
 @interface NUUtils : NSObject
 
-+ (void) hideKeyboard;
-+ (void) showWaitingView;
-+ (void) hideWaitingView;
-+ (BOOL) isConnected;
-
++ (void) hideKeyboard:(UIView *)topView;
 + (BOOL) saveAccessToken:(NSString *)accessToken;
 + (NSString *) accessToken;
 

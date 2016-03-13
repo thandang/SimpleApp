@@ -6,8 +6,8 @@
 //  Copyright © 2016 ThanDang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "NUCommonViewController.h"
 
-@interface NURegisterViewController : UIViewController
+@interface NURegisterViewController : NUCommonViewController
 
 @end
