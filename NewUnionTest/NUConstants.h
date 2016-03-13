@@ -6,6 +6,8 @@
 //  Copyright © 2016 ThanDang. All rights reserved.
 //
 
+#import "Reachability.h"
+
 #ifndef NUConstants_h
 #define NUConstants_h
 

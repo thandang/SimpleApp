@@ -22,4 +22,10 @@
     
 }
 
+
+- (NSString *) removeSpace {
+    NSArray* words = [self componentsSeparatedByCharactersInSet :[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString* nospacestring = [words componentsJoinedByString:@""];
+    return nospacestring;
+}
 @end

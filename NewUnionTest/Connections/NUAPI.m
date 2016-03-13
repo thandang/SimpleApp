@@ -33,17 +33,7 @@ static const NSInteger kTIME_OUT_REQUEST = 300;
     if (request) {
         if (self.requestOperation) return;
         NUConnectionBase *operation = [NUConnectionBase new];
-
-        NSDictionary    *dict  = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"", nil];
-        
-        NSError *error;
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict
-                                                           options:NSJSONWritingPrettyPrinted
-                                                             error:&error];
-        if (error) {
-            NSLog(@"error: %@", [error description]);
-        }
-        operation.requestPostData = jsonData;
+        operation.requestPostData = self.postData;
         [operation connectWithRequest:request requestType:_requestType];
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         operation.requestCompletionBlock = ^(id data, BOOL success) {
@@ -69,9 +59,13 @@ static const NSInteger kTIME_OUT_REQUEST = 300;
                         }
                     }
                 }
-                
+                self.requestOperation = nil;
+                [self cancel];
             });
         };
+        [operation enQueueOperation];
+        self.requestOperation = operation;
+        [operation cancelData];
     }
 }
 
@@ -110,12 +104,15 @@ static const NSInteger kTIME_OUT_REQUEST = 300;
         [content appendFormat:@"%@=%@",key, [[stringValues objectForKey:key] escapeString]];
     }
     
+    self.postData = [NSJSONSerialization dataWithJSONObject:stringValues
+                                                                       options:NSJSONWritingPrettyPrinted
+                                                                         error:NULL];
+    
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
                                     initWithURL:[NSURL URLWithString:url]
                                     cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                     timeoutInterval:kTIME_OUT_REQUEST];
-    [request setValue:@"iPad" forHTTPHeaderField:@"User-Agent"];
     [request setHTTPMethod:@"POST"];
     NSString *accessToken = [NUUtils accessToken];
     if (accessToken && [accessToken length]) {
@@ -123,6 +120,7 @@ static const NSInteger kTIME_OUT_REQUEST = 300;
     }
     
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:[content dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES]];
     
     return request;
@@ -156,7 +154,7 @@ static const NSInteger kTIME_OUT_REQUEST = 300;
         [request setValue:[NSString stringWithFormat:@"m %@", accessToken] forHTTPHeaderField:@"Authorization"];
     }
     
-
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     
     return request;

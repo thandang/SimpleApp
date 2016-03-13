@@ -14,7 +14,7 @@ static const NSInteger kTIME_OUT_REQUEST_DOWNLOAD = 600;
 
 @interface NUConnectionBase()
 
-- (NSURLSession *) backgroundSession;
+- (NSURLSession *) foregroundSession;
 - (NSOperationQueue *)operationQueue;
 
 @end
@@ -50,7 +50,7 @@ static const NSInteger kTIME_OUT_REQUEST_DOWNLOAD = 600;
 - (void) start {
     if (!self.isCancelled) {
         if (!_session)
-            _session = [self backgroundSession];
+            _session = [self foregroundSession];
         if (_requestType == REQUEST_POST) {
             _dataTask = [_session uploadTaskWithRequest:_request fromData:self.requestPostData completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                 if (self.requestCompletionBlock) {
@@ -72,6 +72,7 @@ static const NSInteger kTIME_OUT_REQUEST_DOWNLOAD = 600;
                 }
             }];
         }
+        [_dataTask resume];
     }
 }
 
@@ -84,23 +85,19 @@ static const NSInteger kTIME_OUT_REQUEST_DOWNLOAD = 600;
     _dataTask = nil;
 }
 
-- (NSURLSession *) backgroundSession {
-    static NSURLSession *session_ = nil;
+- (NSURLSession *) foregroundSession {
+    
+    static NSURLSession *session = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSURLSessionConfiguration *configuration = nil;
-
-        configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"backgroundSession"];
-        
-        [configuration setNetworkServiceType:NSURLNetworkServiceTypeBackground];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         [configuration setAllowsCellularAccess:YES];
         [configuration setTimeoutIntervalForRequest:kTIME_OUT_REQUEST_DOWNLOAD];
         [configuration setTimeoutIntervalForResource:kTIME_OUT_REQUEST_DOWNLOAD];
-        [configuration setHTTPMaximumConnectionsPerHost:5];
-        session_ = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
-        
+        [configuration setHTTPMaximumConnectionsPerHost:1];
+        session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
     });
-    return session_;
+    return session;
 }
 
 - (NSOperationQueue *) operationQueue {

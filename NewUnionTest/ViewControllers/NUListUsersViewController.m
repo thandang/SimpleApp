@@ -1,28 +1,20 @@
 //
-//  NURegisterViewController.m
+//  NUListUsersViewController.m
 //  NewUnionTest
 //
 //  Created by Than Dang on 3/13/16.
 //  Copyright © 2016 ThanDang. All rights reserved.
 //
 
-#import "NURegisterViewController.h"
-#import "NUAPI+CreateUser.h"
+#import "NUListUsersViewController.h"
+#import "NUAPI+ListUser.h"
 
-@interface NURegisterViewController () <NUAPIDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *txtName;
-@property (weak, nonatomic) IBOutlet UITextField *txtEmail;
-@property (weak, nonatomic) IBOutlet UITextField *txtPassword;
-
-
-
-
-
-
+@interface NUListUsersViewController () <NUAPIDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
-@implementation NURegisterViewController
+@implementation NUListUsersViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,10 +36,18 @@
 }
 */
 
-- (IBAction)onActionRegister:(id)sender {
+#pragma mark - UITableview
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return 0;
 }
 
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
 
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
 
 #pragma mark - Request protocol adopt
 

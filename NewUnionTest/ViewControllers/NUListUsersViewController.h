@@ -1,5 +1,5 @@
 //
-//  NULoginViewController.h
+//  NUListUsersViewController.h
 //  NewUnionTest
 //
 //  Created by Than Dang on 3/13/16.
@@ -8,6 +8,6 @@
 
 #import "NUCommonViewController.h"
 
-@interface NULoginViewController : NUCommonViewController
+@interface NUListUsersViewController : NUCommonViewController
 
 @end

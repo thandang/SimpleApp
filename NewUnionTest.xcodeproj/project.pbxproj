@@ -19,9 +19,6 @@
 		36539C011C93EC7B007B43D0 /* NUConnectionBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C001C93EC7B007B43D0 /* NUConnectionBase.m */; };
 		36539C051C93EC97007B43D0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C041C93EC97007B43D0 /* Reachability.m */; };
 		36539C081C93EE43007B43D0 /* NUAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C071C93EE43007B43D0 /* NUAPI.m */; };
-		36539C0B1C93EE87007B43D0 /* NULoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C0A1C93EE87007B43D0 /* NULoginViewController.m */; };
-		36539C0F1C93EEB3007B43D0 /* NURegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C0E1C93EEB3007B43D0 /* NURegisterViewController.m */; };
-		36539C121C93EEC5007B43D0 /* NUListUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C111C93EEC5007B43D0 /* NUListUserViewController.m */; };
 		36539C151C93EF02007B43D0 /* NUAPI+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C141C93EF02007B43D0 /* NUAPI+Login.m */; };
 		36539C181C93EF1E007B43D0 /* NUAPI+CreateUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C171C93EF1E007B43D0 /* NUAPI+CreateUser.m */; };
 		36539C1B1C93EF35007B43D0 /* NUAPI+ListUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539C1A1C93EF35007B43D0 /* NUAPI+ListUser.m */; };
@@ -33,6 +30,12 @@
 		36E149191C953FAB00540B0C /* NSDictionary+NotNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149181C953FAB00540B0C /* NSDictionary+NotNullValue.m */; };
 		36E1491D1C95716E00540B0C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E1491C1C95716E00540B0C /* MBProgressHUD.m */; };
 		36E149201C95721200540B0C /* NUCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E1491F1C95721200540B0C /* NUCommonViewController.m */; };
+		36E149241C957D3100540B0C /* NULoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149221C957D3100540B0C /* NULoginViewController.m */; };
+		36E149251C957D3100540B0C /* NULoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E149231C957D3100540B0C /* NULoginViewController.xib */; };
+		36E149291C957D8F00540B0C /* NURegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E149271C957D8F00540B0C /* NURegisterViewController.m */; };
+		36E1492A1C957D8F00540B0C /* NURegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E149281C957D8F00540B0C /* NURegisterViewController.xib */; };
+		36E1492E1C957DC000540B0C /* NUListUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E1492C1C957DC000540B0C /* NUListUsersViewController.m */; };
+		36E1492F1C957DC000540B0C /* NUListUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E1492D1C957DC000540B0C /* NUListUsersViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +80,6 @@
 		36539C041C93EC97007B43D0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Connections/Reachability.m; sourceTree = "<group>"; };
 		36539C061C93EE43007B43D0 /* NUAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUAPI.h; path = Connections/NUAPI.h; sourceTree = "<group>"; };
 		36539C071C93EE43007B43D0 /* NUAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUAPI.m; path = Connections/NUAPI.m; sourceTree = "<group>"; };
-		36539C091C93EE87007B43D0 /* NULoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NULoginViewController.h; path = ViewControllers/NULoginViewController.h; sourceTree = "<group>"; };
-		36539C0A1C93EE87007B43D0 /* NULoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NULoginViewController.m; path = ViewControllers/NULoginViewController.m; sourceTree = "<group>"; };
-		36539C0D1C93EEB3007B43D0 /* NURegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NURegisterViewController.h; path = ViewControllers/NURegisterViewController.h; sourceTree = "<group>"; };
-		36539C0E1C93EEB3007B43D0 /* NURegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NURegisterViewController.m; path = ViewControllers/NURegisterViewController.m; sourceTree = "<group>"; };
-		36539C101C93EEC5007B43D0 /* NUListUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUListUserViewController.h; path = ViewControllers/NUListUserViewController.h; sourceTree = "<group>"; };
-		36539C111C93EEC5007B43D0 /* NUListUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUListUserViewController.m; path = ViewControllers/NUListUserViewController.m; sourceTree = "<group>"; };
 		36539C131C93EF02007B43D0 /* NUAPI+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NUAPI+Login.h"; path = "Connections/NUAPI+Login.h"; sourceTree = "<group>"; };
 		36539C141C93EF02007B43D0 /* NUAPI+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NUAPI+Login.m"; path = "Connections/NUAPI+Login.m"; sourceTree = "<group>"; };
 		36539C161C93EF1E007B43D0 /* NUAPI+CreateUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NUAPI+CreateUser.h"; path = "Connections/NUAPI+CreateUser.h"; sourceTree = "<group>"; };
@@ -105,6 +102,15 @@
 		36E1491C1C95716E00540B0C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Libraries/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
 		36E1491E1C95721200540B0C /* NUCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUCommonViewController.h; path = ViewControllers/NUCommonViewController.h; sourceTree = "<group>"; };
 		36E1491F1C95721200540B0C /* NUCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUCommonViewController.m; path = ViewControllers/NUCommonViewController.m; sourceTree = "<group>"; };
+		36E149211C957D3100540B0C /* NULoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NULoginViewController.h; path = ViewControllers/NULoginViewController.h; sourceTree = "<group>"; };
+		36E149221C957D3100540B0C /* NULoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NULoginViewController.m; path = ViewControllers/NULoginViewController.m; sourceTree = "<group>"; };
+		36E149231C957D3100540B0C /* NULoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NULoginViewController.xib; path = ViewControllers/NULoginViewController.xib; sourceTree = "<group>"; };
+		36E149261C957D8F00540B0C /* NURegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NURegisterViewController.h; path = ViewControllers/NURegisterViewController.h; sourceTree = "<group>"; };
+		36E149271C957D8F00540B0C /* NURegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NURegisterViewController.m; path = ViewControllers/NURegisterViewController.m; sourceTree = "<group>"; };
+		36E149281C957D8F00540B0C /* NURegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NURegisterViewController.xib; path = ViewControllers/NURegisterViewController.xib; sourceTree = "<group>"; };
+		36E1492B1C957DC000540B0C /* NUListUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUListUsersViewController.h; path = ViewControllers/NUListUsersViewController.h; sourceTree = "<group>"; };
+		36E1492C1C957DC000540B0C /* NUListUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUListUsersViewController.m; path = ViewControllers/NUListUsersViewController.m; sourceTree = "<group>"; };
+		36E1492D1C957DC000540B0C /* NUListUsersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NUListUsersViewController.xib; path = ViewControllers/NUListUsersViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,14 +240,17 @@
 		36539C0C1C93EE92007B43D0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				36539C091C93EE87007B43D0 /* NULoginViewController.h */,
-				36539C0A1C93EE87007B43D0 /* NULoginViewController.m */,
-				36539C0D1C93EEB3007B43D0 /* NURegisterViewController.h */,
-				36539C0E1C93EEB3007B43D0 /* NURegisterViewController.m */,
-				36539C101C93EEC5007B43D0 /* NUListUserViewController.h */,
-				36539C111C93EEC5007B43D0 /* NUListUserViewController.m */,
 				36E1491E1C95721200540B0C /* NUCommonViewController.h */,
 				36E1491F1C95721200540B0C /* NUCommonViewController.m */,
+				36E149211C957D3100540B0C /* NULoginViewController.h */,
+				36E149221C957D3100540B0C /* NULoginViewController.m */,
+				36E149231C957D3100540B0C /* NULoginViewController.xib */,
+				36E149261C957D8F00540B0C /* NURegisterViewController.h */,
+				36E149271C957D8F00540B0C /* NURegisterViewController.m */,
+				36E149281C957D8F00540B0C /* NURegisterViewController.xib */,
+				36E1492B1C957DC000540B0C /* NUListUsersViewController.h */,
+				36E1492C1C957DC000540B0C /* NUListUsersViewController.m */,
+				36E1492D1C957DC000540B0C /* NUListUsersViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -401,6 +410,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				36539BD81C93E442007B43D0 /* LaunchScreen.storyboard in Resources */,
+				36E149251C957D3100540B0C /* NULoginViewController.xib in Resources */,
+				36E1492F1C957DC000540B0C /* NUListUsersViewController.xib in Resources */,
+				36E1492A1C957D8F00540B0C /* NURegisterViewController.xib in Resources */,
 				36539BD51C93E442007B43D0 /* Assets.xcassets in Resources */,
 				36539BD31C93E441007B43D0 /* Main.storyboard in Resources */,
 			);
@@ -428,24 +440,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				36539C181C93EF1E007B43D0 /* NUAPI+CreateUser.m in Sources */,
-				36539C0F1C93EEB3007B43D0 /* NURegisterViewController.m in Sources */,
 				36539BFD1C93EC44007B43D0 /* NUUtils.m in Sources */,
 				36E149201C95721200540B0C /* NUCommonViewController.m in Sources */,
+				36E149291C957D8F00540B0C /* NURegisterViewController.m in Sources */,
 				36E1490E1C95191F00540B0C /* NSString+Utils.m in Sources */,
 				36E149111C9536AC00540B0C /* NUUser.m in Sources */,
 				36539BD01C93E441007B43D0 /* ViewController.m in Sources */,
+				36E149241C957D3100540B0C /* NULoginViewController.m in Sources */,
 				36539C1B1C93EF35007B43D0 /* NUAPI+ListUser.m in Sources */,
 				36539C151C93EF02007B43D0 /* NUAPI+Login.m in Sources */,
 				36539BCD1C93E441007B43D0 /* AppDelegate.m in Sources */,
 				36539C011C93EC7B007B43D0 /* NUConnectionBase.m in Sources */,
 				36E149151C953D1000540B0C /* JGAFImageCache.m in Sources */,
 				36539C081C93EE43007B43D0 /* NUAPI.m in Sources */,
-				36539C121C93EEC5007B43D0 /* NUListUserViewController.m in Sources */,
 				36E1491D1C95716E00540B0C /* MBProgressHUD.m in Sources */,
-				36539C0B1C93EE87007B43D0 /* NULoginViewController.m in Sources */,
 				36539C051C93EC97007B43D0 /* Reachability.m in Sources */,
 				36539BCA1C93E441007B43D0 /* main.m in Sources */,
 				36E149191C953FAB00540B0C /* NSDictionary+NotNullValue.m in Sources */,
+				36E1492E1C957DC000540B0C /* NUListUsersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

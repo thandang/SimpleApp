@@ -13,7 +13,7 @@
 typedef void (^NUCompletionBlock)(id data, BOOL success);
 typedef void (^NUHTTPCompleteBlock)(id data, BOOL success, NSInteger errorCode);
 
-@interface NUConnectionBase : NSOperation <NSURLSessionDelegate> {
+@interface NUConnectionBase : NSOperation <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate> {
     NSURLSession *_session;
     NSURLRequest    *_request;
     REQUEST_TYPE _requestType;
