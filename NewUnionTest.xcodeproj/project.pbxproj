@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3642BC9C1C96719D008AFCB8 /* NUUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3642BC9B1C96719D008AFCB8 /* NUUserTest.m */; };
 		36539BCA1C93E441007B43D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539BC91C93E441007B43D0 /* main.m */; };
 		36539BCD1C93E441007B43D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539BCC1C93E441007B43D0 /* AppDelegate.m */; };
 		36539BD01C93E441007B43D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36539BCF1C93E441007B43D0 /* ViewController.m */; };
@@ -95,6 +96,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3642BC9B1C96719D008AFCB8 /* NUUserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUUserTest.m; sourceTree = "<group>"; };
 		36539BC51C93E441007B43D0 /* NewUnionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewUnionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36539BC91C93E441007B43D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36539BCB1C93E441007B43D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 			children = (
 				36539BE21C93E442007B43D0 /* NewUnionTestTests.m */,
 				36539BE41C93E442007B43D0 /* Info.plist */,
+				3642BC9B1C96719D008AFCB8 /* NUUserTest.m */,
 			);
 			path = NewUnionTestTests;
 			sourceTree = "<group>";
@@ -925,6 +928,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36539BE31C93E442007B43D0 /* NewUnionTestTests.m in Sources */,
+				3642BC9C1C96719D008AFCB8 /* NUUserTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

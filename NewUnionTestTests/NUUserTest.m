@@ -1,18 +1,19 @@
 //
-//  NewUnionTestTests.m
-//  NewUnionTestTests
+//  NUUserTest.m
+//  NewUnionTest
 //
-//  Created by Than Dang on 3/12/16.
+//  Created by Than Dang on 3/14/16.
 //  Copyright © 2016 ThanDang. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import "NUUser.h"
 
-@interface NewUnionTestTests : XCTestCase
+@interface NUUserTest : XCTestCase
 
 @end
 
-@implementation NewUnionTestTests
+@implementation NUUserTest
 
 - (void)setUp {
     [super setUp];
@@ -36,36 +37,16 @@
     }];
 }
 
-
-- (void) testLogin {
-    
+- (void) testInputUser {
+    NUUser *usr = [NUUser new];
+    [usr setUserId:@"user1"];
+    XCTAssertNotNil(usr.userId, @"user id not null");
 }
 
-- (void) testEmptyUserInput {
-    
+- (void) testEqualUser {
+    NUUser *usr = [NUUser new];
+    [usr setUsername:@"name1"];
+    XCTAssertEqual(usr.username, @"name1", @"name equal");
 }
-
-- (void) testEmptyPasswordInput {
-    
-}
-
-- (void) testRegister {
-    
-}
-
-- (void) testEmptyNameInput {
-    
-}
-
-- (void) testEmptyEmailInput {
-    
-}
-
-
-- (void) testGetListUsers {
-    
-}
-
-
 
 @end
